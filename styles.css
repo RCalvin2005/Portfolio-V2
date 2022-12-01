@@ -10,11 +10,56 @@ body {
 }
 
 #home_text {
-    width: 30%;
+    width: 400px;
 }
 
 #home_pic {
     border-radius: 50%;
-    box-shadow: 5px 5px 20px rgba(145, 154, 231, 0.87);
 }
 
+#home_pic_shadow {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(156, 156, 255);
+    z-index: -5;
+    filter: blur(5px);
+    transform: translate(2%, -98%);
+}
+
+#home_pic_container > .fa-play {
+    position: absolute;
+    font-size: 17rem;
+}
+
+#home_triangle {
+    color: rgb(255, 251, 22);
+    transform: translate(-40%, -55%) rotate(-75deg);
+    z-index: -1;
+}
+
+#home_triangle_shadow {
+    color: rgb(255, 253, 133);
+    transform: translate(-35%, -50%) rotate(-75deg);
+    z-index: -2;
+    filter: blur(4px);
+}
+
+#home_pic_container > .fa-square {
+    position: absolute;
+    font-size: 15rem;
+}
+
+#home_square {
+    color: rgb(143, 14, 218);
+    transform: translate(-40%, 35%) rotate(-25deg);
+    z-index: -1;
+}
+
+#home_square_shadow {
+    color: rgb(212, 137, 255);
+    transform: translate(-37%, 38%) rotate(-25deg);
+    z-index: -2;
+    filter: blur(6px);
+}
