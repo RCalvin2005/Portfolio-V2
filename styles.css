@@ -1,5 +1,11 @@
+:root {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
 body {
     position: relative;
+    font-family: "berlin_bold";
 }
 
 #home {
@@ -30,7 +36,7 @@ body {
 
 #home_pic_container > .fa-play {
     position: absolute;
-    font-size: 17rem;
+    font-size: 13rem;
 }
 
 #home_triangle {
@@ -48,7 +54,7 @@ body {
 
 #home_pic_container > .fa-square {
     position: absolute;
-    font-size: 15rem;
+    font-size: 11rem;
 }
 
 #home_square {
