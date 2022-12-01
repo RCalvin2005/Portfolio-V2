@@ -36,36 +36,36 @@ body {
 
 #home_pic_container > .fa-play {
     position: absolute;
-    font-size: 13rem;
+    font-size: 16.5rem;
 }
 
 #home_triangle {
     color: rgb(255, 251, 22);
-    transform: translate(-40%, -55%) rotate(-75deg);
+    transform: translate(70%, -55%) rotate(-75deg);
     z-index: -1;
 }
 
 #home_triangle_shadow {
     color: rgb(255, 253, 133);
-    transform: translate(-35%, -50%) rotate(-75deg);
+    transform: translate(73%, -52%) rotate(-75deg);
     z-index: -2;
     filter: blur(4px);
 }
 
 #home_pic_container > .fa-square {
     position: absolute;
-    font-size: 11rem;
+    font-size: 14.5rem;
 }
 
 #home_square {
     color: rgb(143, 14, 218);
-    transform: translate(-40%, 35%) rotate(-25deg);
-    z-index: -1;
+    transform: translate(-50%, 25%) rotate(-25deg);
+    z-index: -3;
 }
 
 #home_square_shadow {
     color: rgb(212, 137, 255);
-    transform: translate(-37%, 38%) rotate(-25deg);
-    z-index: -2;
+    transform: translate(-47%, 28%) rotate(-25deg);
+    z-index: -4;
     filter: blur(6px);
 }

@@ -11,7 +11,6 @@ window.onload = function() {
     sections.forEach(function(section) {
         section.style.minHeight = String(vh - navHeight) + "px";
     })
-
 }
 
 // https://github.com/twbs/bootstrap/issues/1768
