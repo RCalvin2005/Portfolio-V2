@@ -2,14 +2,16 @@ window.onload = function() {
 
     // Add padding to ensure content not blocked by nav
     var navHeight = document.querySelector("nav").clientHeight
-    var main = document.querySelector("main")
-    main.style.paddingTop = String(navHeight) + "px";
+    var buffer = document.querySelectorAll(".nav-buffer")
+    buffer.forEach(function(buffer) {
+        buffer.style.height = String(navHeight) + "px";
+    })
 
     // Ensure each section fills viewport
     var vh = window.innerHeight
-    var sections = document.querySelectorAll("section")
-    sections.forEach(function(section) {
-        section.style.minHeight = String(vh - navHeight) + "px";
+    var container = document.querySelectorAll(".section-container")
+    container.forEach(function(container) {
+        container.style.minHeight = String(vh - navHeight) + "px";
     })
 }
 

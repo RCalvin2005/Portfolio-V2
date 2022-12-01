@@ -8,15 +8,47 @@ body {
     font-family: "berlin_bold", Verdana, sans-serif;
 }
 
-#home {
+section {
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "berlin_xbold", Verdana, sans-serif;
+}
+
+.nav-buffer {
+    width: 100%;
+}
+
+.flex-h {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
 }
 
-#home_text {
+.flex-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-narrow {
     width: 400px;
+}
+
+.text-wide {
+    width: 550px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.gap-7 {
+    gap: 7rem;
 }
 
 #home_pic {
@@ -68,4 +100,16 @@ body {
     transform: translate(-47%, 28%) rotate(-25deg);
     z-index: -4;
     filter: blur(6px);
+}
+
+#about_pic {
+    border-radius: 20px;
+}
+
+.fa-free-code-camp, .fa-graduation-cap {
+    font-size: 5rem;
+}
+
+#cs50 {
+    font-family: "berlin_xbold", Verdana, sans-serif;
 }
