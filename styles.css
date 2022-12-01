@@ -5,7 +5,7 @@
 
 body {
     position: relative;
-    font-family: "berlin_bold";
+    font-family: "berlin_bold", Verdana, sans-serif;
 }
 
 #home {
