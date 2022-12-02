@@ -20,15 +20,8 @@ h1 {
     width: 100%;
 }
 
-.flex-h {
+.flex-centered {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-v {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -43,13 +36,14 @@ h1 {
 
 .section-heading {
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .gap-7 {
     gap: 7rem;
 }
+
+/* HOME SECTION */
 
 #home_pic {
     border-radius: 50%;
@@ -104,12 +98,30 @@ h1 {
 
 #about_pic {
     border-radius: 20px;
+    box-shadow: 5px 5px 20px 5px rgb(201, 201, 201);
 }
+
+.qualifications_group, .qualifications_group p {
+    width: 300px;
+    margin: 0;
+}
+
 
 .fa-free-code-camp, .fa-graduation-cap {
     font-size: 5rem;
 }
 
+.qualifications_icon {
+    height: 5rem;
+    line-height: 5rem;
+}
+
 #cs50 {
     font-family: "berlin_xbold", Verdana, sans-serif;
+    font-size: 4rem;
+}
+
+.qualifications_org {
+    font-family: "berlin_xbold", Verdana, sans-serif;
+    font-size: 1.5rem;
 }

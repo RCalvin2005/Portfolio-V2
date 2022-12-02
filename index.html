@@ -55,11 +55,11 @@
             </div>
         </nav>
 
-        <main class="pb-5">
+        <main class="pb-5 container-fluid">
             
             <section id="home" class="container-fluid">
                 <div class="nav-buffer"></div>
-                <div id="home_container" class="section-container flex-h gap-5">
+                <div id="home_container" class="section-container flex-centered gap-5">
                     <div class="text-narrow">
                         <h1>Hi, I'm Calvin</h1>
                         <h5>Prospective Programmer and/or Engineer</h5>
@@ -68,7 +68,7 @@
                     <div id="home_pic_container">
                         <i class="fa-solid fa-play" id="home_triangle"></i>
                         <i class="fa-solid fa-play" id="home_triangle_shadow"></i>
-                        <img id="home_pic" src="./assets/my-pic.png" alt="A pic of me!">
+                        <img id="home_pic" src="./assets/home-pic.png" alt="A pic of me!">
                         <div id="home_pic_shadow"></div>
                         <i class="fa-solid fa-square" id="home_square"></i>
                         <i class="fa-solid fa-square" id="home_square_shadow"></i>
@@ -80,7 +80,7 @@
                 <div class="nav-buffer"></div>
                 <div id="about_container" class="section-container">
                     <h1 class="section-heading">About Me</h1>
-                    <div class="flex-h gap-7">
+                    <div class="flex-centered gap-7 mt-3">
                         <img id="about_pic" src="./assets/about-pic.jpeg" alt="Another pic of me!" width="300px">
                         <div class="text-wide">
                             <p>17 years old, from Malang, Indonesia. High school valedictorian and prospective programmer and/or engineer intending to specialise in areas such as Robotics and IoT. Completed Harvard's CS50's Introduction to Computer Science on edX along with its Final Project as my first major step. No work experience as of now.</p>
@@ -94,33 +94,39 @@
                 <div class="nav-buffer"></div>
                 <div id="qualifications_container" class="section-container">
                     <h1 class="section-heading">Qualifications</h1>
-                    <div>
-                        <i class="fa-brands fa-free-code-camp"></i>
-                        freeCodeCamp's Responsive Web Design
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                60%
+                    <div class="flex-centered gap-5 mt-5">
+                        <div class="qualifications_group text-center">
+                            <p class="qualifications_icon"><i class="fa-brands fa-free-code-camp"></i></p>
+                            <p class="qualifications_org">freeCodeCamp</p>
+                            <p>Responsive Web Design</p>
+                            <div class="progress mt-2">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    60%
+                                </div>
                             </div>
                         </div>
+                        <div class="qualifications_group text-center">
+                            <p class="qualifications_icon"><span id="cs50">CS50</span></p>
+                            <p class="qualifications_org">Harvard</p>
+                            <p>CS50x 2022</p>
+                            <div class="progress mt-2">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qualifications_group text-center">
+                            <p class="qualifications_icon"><i class="fa-solid fa-graduation-cap"></i></p>
+                            <p class="qualifications_org">University</p>
+                            <p>Enrolling in 2023</p>
+                            <div class="progress mt-2">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    50%
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                    <div>
-                        <span id="cs50">CS50</span>
-                        Harvard CS50x 2022
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                100%
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        University: Starting in 2023
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                50%
-                            </div>
-                        </div>
-                    </div>                    
+            
                 </div>
 
             </section>
