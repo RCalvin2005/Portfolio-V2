@@ -79,7 +79,7 @@
             <section id="about" class="container-fluid">
                 <div class="nav-buffer"></div>
                 <div id="about_container" class="section-container">
-                    <h1 class="section-heading">About Me</h1>
+                    <h1 class="section-heading heading-lower">About Me</h1>
                     <div class="flex-centered gap-7 mt-3">
                         <img id="about_pic" src="./assets/about-pic.jpeg" alt="Another pic of me!" width="300px">
                         <div class="text-wide">
@@ -87,15 +87,14 @@
                         </div>                    
                     </div>        
                 </div>
-
             </section>
 
-            <section id="qualifications" class="container-fluid">
+            <section id="qualifications" class="container-fluid text-center">
                 <div class="nav-buffer"></div>
                 <div id="qualifications_container" class="section-container">
-                    <h1 class="section-heading">Qualifications</h1>
+                    <h1 class="section-heading heading-lower">Qualifications</h1>
                     <div class="flex-centered gap-5 mt-5">
-                        <div class="qualifications_group text-center">
+                        <div class="qualifications_group">
                             <p class="qualifications_icon"><i class="fa-brands fa-free-code-camp"></i></p>
                             <p class="qualifications_org">freeCodeCamp</p>
                             <p>Responsive Web Design</p>
@@ -105,7 +104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="qualifications_group text-center">
+                        <div class="qualifications_group">
                             <p class="qualifications_icon"><span id="cs50">CS50</span></p>
                             <p class="qualifications_org">Harvard</p>
                             <p>CS50x 2022</p>
@@ -115,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="qualifications_group text-center">
+                        <div class="qualifications_group">
                             <p class="qualifications_icon"><i class="fa-solid fa-graduation-cap"></i></p>
                             <p class="qualifications_org">University</p>
                             <p>Enrolling in 2023</p>
@@ -131,50 +130,61 @@
 
             </section>
 
-            <section id="skills" class="container-fluid">
+            <section id="skills" class="container-fluid text-center">
                 <div class="nav-buffer"></div>
-                <h1 class="section-heading">Skills</h1>
-                <div>
-                    HTML
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div>
-                    CSS
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div>
-                    JavaScript
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div>
-                    Bootstrap
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div>
-                    C
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div>
-                    Python
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div>
-                    Flask
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                <div id="skills_container" class="section-container">
+                    <h1 class="section-heading heading-upper">Skills</h1>
+                    <div id="skills_group_container" class="flex-centered">
+                        <div class="skills_group">
+                            <img src="https://img.icons8.com/color/144/null/html-5--v1.png"/>
+                            <p class="skills_name">HTML</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="skills_group">
+                            <img src="https://img.icons8.com/color/144/null/css3.png"/>
+                            <p class="skills_name">CSS</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="skills_group">
+                            <img src="https://img.icons8.com/color/144/null/javascript--v1.png"/>
+                            <p class="skills_name">JavaScript</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/color/144/null/bootstrap.png"/>
+                            <p class="skills_name">Bootstrap</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="skills_group">
+                            <img src="https://img.icons8.com/color/144/null/c-programming.png"/>
+                            <p class="skills_name">C</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="skills_group">
+                            <img src="https://img.icons8.com/color/144/null/python--v1.png"/>
+                            <p class="skills_name">Python</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="skills_group">
+                            <img src="https://img.icons8.com/color/144/null/flask.png"/>
+                            <p class="skills_name">Flask</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>               
+                    </div>
                 </div>
             </section>
 
