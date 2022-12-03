@@ -129,7 +129,7 @@ h1 {
     font-size: 4rem;
 }
 
-.qualification_group p, .skill_name, .project_about p {
+.qualification_group p, .skill_name {
     margin: 0;
 }
 
@@ -162,7 +162,8 @@ h1 {
 }
 
 .carousel-item {
-    padding: 2rem 3rem;
+    padding: 0 3rem;
+    height: 375px;
 }
 
 .carousel-item-container {
@@ -177,11 +178,15 @@ h1 {
 .project_preview {
     width: 50%;
     max-width: 550px;
-    aspect-ratio: 16 / 9;
     border-radius: 25px;
 }
 
+.youtube {
+    aspect-ratio: 16 / 9;
+}
+
 .scratch {
+    max-width: 450px;
     aspect-ratio: 4 / 3;
 }
 

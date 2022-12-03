@@ -190,36 +190,105 @@
             <section id="projects" class="container-fluid">
                 <div class="nav-buffer"></div>
                 <div id="projects_container" class="section-container">
-                    <h1 id="projects_heading" class="section-heading heading-upper">Projects</h1>
+                    <h1 id="projects_heading" class="section-heading heading-lower">Projects</h1>
                     <div id="projects_carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
 
                             <div class="carousel-item active">
                                 <div class="flex-centered gap-5 carousel-item-container">
-                                    <iframe class="project_preview" src="https://www.youtube.com/embed/0kwHRVprxgk" title="CS50 Final Project Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="project_preview youtube" src="https://www.youtube.com/embed/0kwHRVprxgk" title="CS50 Final Project Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="project_about">
                                         <p class="project_name">CS50 Final Project</p>
                                         <p>A simple management system for PT. Cahaya Walet Jaya (where my father works) implemented as a web app using Flask.</p>
-                                        <a class="btn btn-primary" href="https://github.com/RCalvin2005/CS50-Final-Project" role="button">GitHub Repo</a>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://github.com/RCalvin2005/CS50-Final-Project" role="button">GitHub Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                     </div>                                    
                                 </div>
                             </div>
 
 
                             <div class="carousel-item">
-                                <div class="flex-centered gap-5">
-                                    <iframe class="project_preview scratch" src="https://scratch.mit.edu/projects/716269298/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                                <div class="flex-centered gap-5 carousel-item-container">
+                                    <img class="project_preview" src="./assets/projects/code-playground.png" alt="Code Playground Preview">
                                     <div class="project_about">
-                                        <p class="project_name">2 Player "Badminton" Game</p>
-                                        <p>Instructions: </p>
-                                        <p>Player 1 &mdash; Left and Right Arrow to move, Up Arrow to swing</p>
-                                        <p>Player 2 &mdash; A and D to move, W to swing</p>
-                                        <p>Press Space to start</p>
-                                        <a class="btn btn-primary" href="https://scratch.mit.edu/projects/716269298" role="button">Scratch Code</a>
+                                        <p class="project_name">Code Playground</p>
+                                        <p>A collection of simple JavaScript Projects, which includes a <a href="https://rcalvin2005.github.io/Loading-Screen/" target="_blank">simple loading animation</a>, <a href="https://rcalvin2005.github.io/Calculator/" target="_blank">calculator</a> and <a href="https://rcalvin2005.github.io/Tic-Tac-Toe/" target="_blank">Tic Tac Toe</a>. Orginally made for CS50x.</p>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://rcalvin2005.github.io/Code-Playground-Homepage/" role="button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                     </div>                                    
                                 </div>
-
                             </div>
+
+
+                            <div class="carousel-item">
+                                <div class="flex-centered gap-5 carousel-item-container">
+                                    <img class="project_preview scratch" src="./assets/projects/badminton-game.png" alt="Badminton Game Preview">
+                                    <div class="project_about">
+                                        <p class="project_name">2 Player "Badminton" Game</p>
+                                        <p>A simple game made using Scratch with mechanics resembling badminton. Based of a stickman badminton game I played a couple years back. Orginally made for CS50T.</p>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://scratch.mit.edu/projects/716269298" role="button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="flex-centered gap-5 carousel-item-container">
+                                    <img class="project_preview scratch border" src="./assets/projects/snake.png" alt="Snake Preview">
+                                    <div class="project_about">
+                                        <p class="project_name">Snake</p>
+                                        <p>My approach in recreating the classic game Snake, made using Scratch. Orginially made for CS50x.</p>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://scratch.mit.edu/projects/717424281" role="button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="flex-centered gap-5 carousel-item-container">
+                                    <img class="project_preview" src="./assets/projects/portfolio-v1.png" alt="Portfolio V1 Preview">
+                                    <div class="project_about">
+                                        <p class="project_name">Personal Portfolio V1</p>
+                                        <p>The first iteration of my personal portfolio, containing only my first 2 completed projects. Originally made for CS50T.</p>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://rcalvin2005.github.io/Portfolio-V1/" role="button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="flex-centered gap-5 carousel-item-container">
+                                    <img class="project_preview" src="./assets/projects/technical-documentation.png" alt="Technical Documentation Preview">
+                                    <div class="project_about">
+                                        <p class="project_name">Technical Documentation Project</p>
+                                        <p>The third project for FreeCodeCamp's Responsive Web Design Certification. Contains a self-made collapsing navigation bar for mobile.</p>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://rcalvin2005.github.io/Technical-Documentation-Project/" role="button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            
+
+                            <div class="carousel-item">
+                                <div class="flex-centered gap-5 carousel-item-container">
+                                    <img class="project_preview" src="./assets/projects/tribute-page.png" alt="Tribute Page Preview">
+                                    <div class="project_about">
+                                        <p class="project_name">Tribute Page Project</p>
+                                        <p>The second project for FreeCodeCamp's Responsive Web Design Certification. Contains a self-made responsive timeline.</p>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://rcalvin2005.github.io/Tribute-Page-Project/" role="button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="flex-centered gap-5 carousel-item-container">
+                                    <img class="project_preview" src="./assets/projects/survey-form.png" alt="Survey Form Preview">
+                                    <div class="project_about">
+                                        <p class="project_name">Survey Form Project</p>
+                                        <p>The first project for FreeCodeCamp's Responsive Web Design Certification, as well as my very first HTML/CSS project.</p>
+                                        <a class="btn btn-primary project_button" target="_blank" href="https://rcalvin2005.github.io/Survey-Form-Project/" role="button">Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#projects_carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
