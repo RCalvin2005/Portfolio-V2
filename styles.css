@@ -8,12 +8,20 @@ body {
     font-family: "berlin_bold", Verdana, sans-serif;
 }
 
+main {
+    opacity: 0;
+}
+
 section:not(:last-of-type) {
     min-height: 100vh;
 }
 
 h1 {
     font-family: "berlin_xbold", Verdana, sans-serif;
+}
+
+#navbar .active {
+    color: rgb(249, 255, 255);
 }
 
 .nav-buffer {
@@ -37,6 +45,10 @@ h1 {
 
 .section-heading {
     text-align: center;
+}
+
+#home_name, .section-heading {
+    color: rgb(53, 40, 231);
 }
 
 .heading-upper {

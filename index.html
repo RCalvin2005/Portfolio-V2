@@ -11,6 +11,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+        <!-- https://scrollrevealjs.org/guide/installation.html -->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
         <!-- Font Awesome Icons https://fontawesome.com -->
         <script src="https://kit.fontawesome.com/5c985a550d.js" crossorigin="anonymous"></script>
 
@@ -21,7 +24,7 @@
 
     </head>
 
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
 
         <nav class="navbar navbar-expand-md bg-light fixed-top">
             <div class="container-fluid">
@@ -61,16 +64,16 @@
                 <div class="nav-buffer"></div>
                 <div id="home_container" class="section-container flex-centered gap-5">
                     <div class="text-narrow">
-                        <h1>Hi, I'm Calvin</h1>
-                        <h4>Prospective Programmer and/or Engineer</h4>
-                        <p>I'm a high school graduate currently taking a gap year before university. In the meantime, I'm on a journey to become a self-taught programmer.</p>
+                        <h1 id="home_heading">Hi, I'm <span id="home_name">Calvin</span></h1>
+                        <h4 id="home_subheading">Prospective Programmer and/or Engineer</h4>
+                        <p id="home_text">I'm a high school graduate currently taking a gap year before university. In the meantime, I'm on a journey to become a self-taught programmer.</p>
                     </div>
                     <div id="home_pic_container">
                         <i class="fa-solid fa-play" id="home_triangle"></i>
                         <i class="fa-solid fa-play" id="home_triangle_shadow"></i>
-                        <img id="home_pic" src="./assets/home-pic.png" alt="A pic of me!">
-                        <div id="home_pic_shadow"></div>
-                        <i class="fa-solid fa-square" id="home_square"></i>
+                        <img class="home_pic" id="home_pic" src="./assets/home-pic.png" alt="A pic of me!">
+                        <div class="home_pic" id="home_pic_shadow"></div>
+                        <i class="fa-solid fa-square s" id="home_square"></i>
                         <i class="fa-solid fa-square" id="home_square_shadow"></i>
                     </div>                   
                 </div>
@@ -79,10 +82,10 @@
             <section id="about" class="container-fluid">
                 <div class="nav-buffer"></div>
                 <div id="about_container" class="section-container">
-                    <h1 class="section-heading heading-lower">About Me</h1>
+                    <h1 id="about_heading" class="section-heading heading-lower">About Me</h1>
                     <div class="flex-centered gap-7 mt-3">
                         <img id="about_pic" src="./assets/about-pic.jpeg" alt="Another pic of me!" width="300">
-                        <div class="text-wide">
+                        <div id="about_text" class="text-wide">
                             <p>17 years old, from Malang, Indonesia. High school valedictorian and prospective programmer and/or engineer intending to specialise in areas such as Robotics and IoT. Completed Harvard's CS50's Introduction to Computer Science on edX along with its Final Project as my first major step. No work experience as of now.</p>
                         </div>                    
                     </div>        
@@ -92,12 +95,12 @@
             <section id="qualifications" class="container-fluid text-center">
                 <div class="nav-buffer"></div>
                 <div id="qualifications_container" class="section-container">
-                    <h1 class="section-heading heading-lower">Qualifications</h1>
+                    <h1 id="qualifications_heading" class="section-heading heading-lower">Qualifications</h1>
                     <div class="flex-centered gap-5 mt-5">
                         <div class="qualification_group">
                             <p class="qualification_icon"><i class="fa-brands fa-free-code-camp"></i></p>
                             <p class="qualification_org">freeCodeCamp</p>
-                            <p>Responsive Web Design</p>
+                            <p class="qualification_desc">Responsive Web Design</p>
                             <div class="progress mt-2">
                                 <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                     60%
@@ -107,7 +110,7 @@
                         <div class="qualification_group">
                             <p class="qualification_icon"><span id="cs50">CS50</span></p>
                             <p class="qualification_org">Harvard</p>
-                            <p>CS50x 2022</p>
+                            <p class="qualification_desc">CS50x 2022</p>
                             <div class="progress mt-2">
                                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                     100%
@@ -117,7 +120,7 @@
                         <div class="qualification_group">
                             <p class="qualification_icon"><i class="fa-solid fa-graduation-cap"></i></p>
                             <p class="qualification_org">University</p>
-                            <p>Enrolling in 2023</p>
+                            <p class="qualification_desc">Enrolling in 2023</p>
                             <div class="progress mt-2">
                                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                     50%
@@ -131,59 +134,59 @@
             <section id="skills" class="container-fluid text-center">
                 <div class="nav-buffer"></div>
                 <div id="skills_container" class="section-container">
-                    <h1 class="section-heading heading-upper">Skills</h1>
+                    <h1 id="skills_heading" class="section-heading heading-upper">Skills</h1>
                     <div id="skills_group_container" class="flex-centered">
                         <div class="skill_group">
-                            <img src="https://img.icons8.com/color/144/null/html-5--v1.png" alt="HTML Icon">
+                            <img class="skill_icon" src="https://img.icons8.com/color/144/null/html-5--v1.png" alt="HTML Icon">
                             <p class="skill_name">HTML</p>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="skill_group">
-                            <img src="https://img.icons8.com/color/144/null/css3.png" alt="CSS Icon">
+                            <img class="skill_icon" src="https://img.icons8.com/color/144/null/css3.png" alt="CSS Icon">
                             <p class="skill_name">CSS</p>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="skill_group">
-                            <img src="https://img.icons8.com/color/144/null/javascript--v1.png" alt="JavaScript Icon">
+                            <img class="skill_icon" src="https://img.icons8.com/color/144/null/javascript--v1.png" alt="JavaScript Icon">
                             <p class="skill_name">JavaScript</p>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <div>
-                            <img src="https://img.icons8.com/color/144/null/bootstrap.png" alt="Bootstrap Icon">
+                        <div class="skill_group">
+                            <img class="skill_icon" src="https://img.icons8.com/color/144/null/bootstrap.png" alt="Bootstrap Icon">
                             <p class="skill_name">Bootstrap</p>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="skill_group">
-                            <img src="https://img.icons8.com/color/144/null/c-programming.png" alt="C Icon">
+                            <img class="skill_icon" src="https://img.icons8.com/color/144/null/c-programming.png" alt="C Icon">
                             <p class="skill_name">C</p>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="skill_group">
-                            <img src="https://img.icons8.com/color/144/null/python--v1.png" alt="Python Icon">
+                            <img class="skill_icon" src="https://img.icons8.com/color/144/null/python--v1.png" alt="Python Icon">
                             <p class="skill_name">Python</p>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="skill_group">
-                            <img src="https://img.icons8.com/color/144/null/flask.png" alt="Flask Icon">
+                            <img class="skill_icon" src="https://img.icons8.com/color/144/null/flask.png" alt="Flask Icon">
                             <p class="skill_name">Flask</p>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </div>               
                     </div>
-                    <p class="small text-muted mt-3">Icons by <a target="_blank" href="https://icons8.com/icons">Icons8</a></p>
+                    <p id="skills_credit" class="small text-muted mt-2">Icons by <a target="_blank" href="https://icons8.com/icons">Icons8</a></p>
                 </div>
             </section>
 
@@ -196,7 +199,7 @@
 
                             <div class="carousel-item active">
                                 <div class="flex-centered gap-5 carousel-item-container">
-                                    <iframe class="project_preview youtube" src="https://www.youtube.com/embed/0kwHRVprxgk" title="CS50 Final Project Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="project_preview youtube" src="https://www.youtube.com/embed/0kwHRVprxgk" title="CS50 Final Project Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="project_about">
                                         <p class="project_name">CS50 Final Project</p>
                                         <p>A simple management system for PT. Cahaya Walet Jaya (where my father works) implemented as a web app using Flask.</p>
@@ -305,15 +308,15 @@
             <section id="contact" class="container-fluid">
                 <div class="nav-buffer"></div>
                 <div id="contact_container" class="section-container">
-                    <h1 class="section-heading heading-lower">Contact Me</h1>
+                    <h1 id="contact_heading" class="section-heading heading-lower">Contact Me</h1>
                     <div class="flex-centered flex-column gap-5 mt-4">
                         <div class="flex-centered gap-4">
                             <i class="fa-regular fa-envelope contact_icon"></i>
-                            <a href="mailto: r.calvin.yong@gmail.com"><span class="contact_info">r.calvin.yong@gmail.com</span></a>
+                            <a class="contact_info" href="mailto:r.calvin.yong@gmail.com">r.calvin.yong@gmail.com</a>
                         </div>
                         <div class="flex-centered gap-4">
                             <i class="fa-brands fa-github contact_icon"></i>
-                            <a href="https://github.com/RCalvin2005" target="_blank"><span class="contact_info">RCalvin2005</span></a>
+                            <a class="contact_info" href="https://github.com/RCalvin2005" target="_blank">RCalvin2005</a>
                         </div>
                     </div>        
                 </div>
@@ -324,7 +327,7 @@
             <div>
                 <p class="footer_name">Calvin</p>
                 <div class="flex-centered gap-4">
-                    <a href="mailto: r.calvin.yong@gmail.com">
+                    <a href="mailto:r.calvin.yong@gmail.com">
                         <i class="fa-regular fa-envelope footer_socials"></i>
                     </a>
                     <a href="https://github.com/RCalvin2005" target="_blank">
@@ -334,5 +337,7 @@
             </div>
             <p class="footer_code">The source code and GitHub repository for this portfolio can be found <a href="https://github.com/RCalvin2005/Portfolio-V2" target="_blank">here</a></p>
         </footer>
+        
+        <script src="reveal.js"></script>
     </body>
 </html>
