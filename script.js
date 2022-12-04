@@ -15,7 +15,7 @@ window.onload = function() {
         {
             container.style.minHeight = String(vh - navHeight) + "px";
         }
-        else
+        else if (container.id != "contact_container")
         {
             container.style.minHeight = String(vh - 2 * navHeight) + "px";
         }

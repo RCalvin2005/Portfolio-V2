@@ -8,7 +8,7 @@ body {
     font-family: "berlin_bold", Verdana, sans-serif;
 }
 
-section {
+section:not(:last-of-type) {
     min-height: 100vh;
 }
 
@@ -201,4 +201,31 @@ h1 {
 
 .contact_icon {
     font-size: 3.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(40, 59, 231);
+    color: rgb(249, 255, 255);
+}
+
+.footer_name {
+    font-family: "berlin_xbold", Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+
+.footer_socials {
+    font-size: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: rgb(249, 255, 255);
+}
+
+footer a:hover {
+    color: rgb(159, 169, 255);
 }
