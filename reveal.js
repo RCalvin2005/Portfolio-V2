@@ -7,9 +7,8 @@ const sr = ScrollReveal ({
     reset: "true"
 })
 
-const main = document.querySelector("main")
-if (main.style.opactity != "0")
-{
+document.addEventListener("loaded", function() {
+
     // Home
     sr.reveal("#home_heading", {});
     sr.reveal("#home_subheading", {delay: 200});
@@ -46,5 +45,6 @@ if (main.style.opactity != "0")
     sr.reveal("#contact_heading", {});
     sr.reveal(".contact_icon", {delay: 200, interval: 200});
     sr.reveal(".contact_info", {delay: 350, interval: 200});
+})
 
-}
+

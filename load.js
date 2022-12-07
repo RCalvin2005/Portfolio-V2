@@ -21,6 +21,13 @@ window.onload = function() {
         }
     })
 
+    // Trigger event
+    const loaded = new Event('loaded');
+    document.dispatchEvent(loaded);
+
+    document.querySelector("#loader").style.display = "none";
+
     const main = document.querySelector("main");
+    main.style.transition = "opacity 1s";
     main.style.opacity = 1;
 }

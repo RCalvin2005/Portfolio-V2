@@ -241,3 +241,18 @@ footer a {
 footer a:hover {
     color: rgb(159, 169, 255);
 }
+
+/* LOADING SCREEN */
+#loader {
+    position: fixed;
+}
+
+.fa-spinner {
+    font-size: 5rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
