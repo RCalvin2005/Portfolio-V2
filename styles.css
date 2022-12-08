@@ -257,12 +257,8 @@ footer a:hover {
     100% { transform: rotate(360deg); }
   }
 
-/* MOBILE */
-@media only screen and (max-width: 768px) {
-
-    .maxed-width {
-        max-width: 100%;
-    }
+/* MOBILE (TALL PHONES) */
+@media only screen and (max-width: 768px){
 
     /* HOME */
     #home_pic, #home_pic_shadow {
@@ -271,15 +267,33 @@ footer a:hover {
     }
 
     #home_pic_container > .fa-play {
-        font-size: 12rem;
+        display: none;
     }
 
     #home_pic_container > .fa-square {
-        font-size: 10rem;
+        display: none;
     }
 
-    #home_pic_container {
-        position: relative;
-        left: -21%;
+    @media (min-height: 800px) {
+        #home_text_container {
+            margin-top: 1rem;
+        }
+
+        #home_pic_container > .fa-play {
+            font-size: 11.5rem;
+            display: inline;
+        }
+
+        #home_pic_container > .fa-square {
+            font-size: 10rem;
+            display: inline;
+        }
+
+        #home_pic_container {
+            position: relative;
+            left: -60px;
+        }        
     }
+
+
 }
