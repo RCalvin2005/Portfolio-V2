@@ -259,12 +259,27 @@ footer a:hover {
 
 /* MOBILE */
 @media only screen and (max-width: 768px) {
-    :root {
-        font-size: 16px;
+
+    .maxed-width {
+        max-width: 100%;
+    }
+
+    /* HOME */
+    #home_pic, #home_pic_shadow {
+        width: 200px;
+        height: 200px;
+    }
+
+    #home_pic_container > .fa-play {
+        font-size: 12rem;
+    }
+
+    #home_pic_container > .fa-square {
+        font-size: 10rem;
     }
 
     #home_pic_container {
         position: relative;
-        left: -15%;
+        left: -21%;
     }
 }
