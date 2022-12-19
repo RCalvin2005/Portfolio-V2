@@ -163,6 +163,14 @@ h1 {
     margin-bottom: -5px;
 }
 
+.skill_icon_pc {
+    display: block;
+}
+
+.skill_icon_mobile {
+    display: none;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -322,4 +330,24 @@ footer a:hover {
 
     /* QUALIFICATIONS SECTION */
 
+    /* SKILLS SECTION */
+    .skill_name {
+        font-size: 1rem;
+    }
+
+    .fa-star {
+        font-size: 0.8rem;
+    }
+
+    .skill_icon_mobile {
+        display: block;
+    }
+    
+    .skill_icon_pc {
+        display: none;
+    }
+
+    #skills_group_container {
+        gap: 0.75rem 2.5rem;
+    }
 }

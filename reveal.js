@@ -29,7 +29,8 @@ document.addEventListener("loaded", function() {
     sr.reveal(".progress-bar", {delay: 650});
 
     // Skills
-    sr.reveal(".skill_icon", {interval: 200});
+    sr.reveal(".skill_icon_pc", {interval: 200});
+    sr.reveal(".skill_icon_mobile", {interval: 200});
     sr.reveal(".skill_name", {delay: 100, interval: 200});
     sr.reveal(".fa-star", {delay: 200, interval: 50});
     sr.reveal("#skills_credit", {delay: 1200});
